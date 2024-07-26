@@ -1,0 +1,39 @@
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/type' as *;
+@use '@carbon/react/scss/breakpoint' as *;
+@use '@carbon/react/scss/theme' as *;
+
+html {
+  background-color: $layer-01;
+}
+
+.starship-list {
+  height: 600px;
+  overflow: scroll;
+  padding-bottom: $spacing-10;
+  margin: 0;
+}
+
+.starship-pagination {
+  margin: 0;
+  padding: 0;
+}
+
+.test2 {
+  align-self: center;
+}
+
+.starship__title {
+  @include type-style('productive-heading-04');
+  margin-top: $spacing-06;
+  margin-bottom: $spacing-04;
+}
+
+.starship__p {
+  @include type-style('body-short-02');
+}
+
+.starship__button-group {
+  padding-top: $spacing-05;
+  flex-direction: column-reverse;
+}
